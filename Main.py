@@ -1,6 +1,7 @@
 from random import randint
 from tkinter import *
 
+
 class Card:
 
 

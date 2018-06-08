@@ -1,4 +1,4 @@
-Why did the chicken cross the road? He was afraid of the Python!!!!
+Why did the chicken cross the road? He was afraid of the Python!!!! (My final bad joke)
 
 So this is my amazing Blackjack game. Honestly, I didn't get to finish it yet.
 I wanted to add a function where you could pick the value of an Ace to be either

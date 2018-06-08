@@ -52,7 +52,7 @@ class Card:
 
     def makeImage(self, window):
 
-        self.canvas = Canvas(window, width=300, height=300)
+        self.canvas = Canvas(window, width=250, height=250, background = "Dark Green")
         self.canvas.place(x = Card.x, y = Card.y)
         Card.x += 100 #Moves the next card over
 
@@ -137,6 +137,7 @@ def main():
     master = Tk()
     master.title("Black Jack")
     master.attributes("-fullscreen", True)
+    master.configure(background="Dark Green")
     #master.geometry("600x400")
 
 
@@ -236,13 +237,13 @@ def main():
 
 
     #Labels
-    scoreLabel = Label(master, text="Score: " + str(player.value))
+    scoreLabel = Label(master, text="Score: " + str(player.value), background = "Dark Green")
     scoreLabel.place(x = 25, y = 25)
 
-    cardsLabel = Label(master, textvariable=playerscards)
+    cardsLabel = Label(master, textvariable=playerscards, background = "Dark Green")
     cardsLabel.place(x = 25, y = 125)
 
-    cardsTitleLabel = Label(master, text="Cards:", font="bold")
+    cardsTitleLabel = Label(master, text="Cards:", font="bold", background = "Dark Green")
     cardsTitleLabel.place(x = 25, y = 100)
 
     #outcomeLabel = Label(master)

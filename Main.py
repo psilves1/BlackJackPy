@@ -130,7 +130,6 @@ player = Player(deck)
 dealer = Player(deck)
 
 def main():
-    #_______________________________________________________________________________________________________________
 
     #GUI Stuff
 
@@ -250,7 +249,7 @@ def main():
 
 
     #Dealer Logic
-    while(dealer.value < 15):
+    while(dealer.value < 14):
         dealer.takeCard(deck)
 
         if(dealer.value > 21):

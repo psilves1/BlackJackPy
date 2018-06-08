@@ -8,4 +8,8 @@ the application it will go full screen and the only way to exit the game is to c
 which I did. It was fun taking what I learned in Java and applying it in another
 language. Also, you might notice that when you click yes on the pop-up window there is
 a weird screen flash. That is because I have a while loop going that basically restarts
-my entire application. Other than that, it plays like normal Blackjack
+my entire application.
+
+!!!!!Also, you're going to need to download Python 3. If you run this on Python 2 it won't run!!!!!
+
+Other than that, it plays like normal Blackjack

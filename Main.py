@@ -246,17 +246,25 @@ def main():
     cardsTitleLabel = Label(master, text="Cards:", font="bold", background = "Dark Green")
     cardsTitleLabel.place(x = 25, y = 100)
 
-    #outcomeLabel = Label(master)
-
 
     #Dealer Logic
-    while(dealer.value < 14):
-        dealer.takeCard(deck)
 
-        if(dealer.value > 21):
-            dealer.giveCardsBack(deck)
+    #1 is easiest, 3 is the hardest
+    dealerDifficulty = randint(1,3)
 
+    def giveDealerCards(max, min):
+        while(dealer.value < min):
+            dealer.takeCard(deck)
 
+            if(dealer.value > max):
+                dealer.giveCardsBack(deck)
+
+    if(dealerDifficulty == 1):
+        giveDealerCards(14, 10)
+    if(dealerDifficulty == 2):
+        giveDealerCards(18, 14)
+    if(dealerDifficulty == 3):
+        giveDealerCards(21, 17)
 
     master.mainloop()
 
